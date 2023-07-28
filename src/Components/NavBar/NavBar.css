@@ -1,0 +1,39 @@
+.navbar-container{
+    width: 100vw;
+    height:10vh;
+    background-color:#212121;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    color:#fff ;
+    padding: 0.2rem 1.5rem;
+}
+.navbar-container .navbar ul li{
+    list-style:none;
+    margin-inline:1rem;
+    padding:0.3rem;
+}
+.navbar-container .navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.navbar-container .navbar>ul{
+    position: relative;
+}
+.navbar-container .navbar>ul>li{
+    display: inline-block;
+    /* position: relative; */
+}
+
+.navbar-container .navbar>ul>li ul{
+    width:200px;
+    position: absolute;
+    display: none;
+    top:100%;
+    padding: 1rem 0.5rem;
+    background-color: #d4e025;
+    transition: all 0.3s ease-in-out;
+}
+.navbar-container .navbar>ul>li:hover ul{
+   display: block;   
+}
